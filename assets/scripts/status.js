@@ -2,7 +2,7 @@
 const servers = [
     { name: 'Proxy', ip: '45.142.112.11:20081' },
     { name: 'Lobby-1', ip: '45.142.112.12:20409' },},
-    { name: 'Lobby-2', ip: 'localhost' },
+   // { name: 'Lobby-2', ip: 'localhost' },
     { name: 'XP-SMP', ip: '193.187.255.41:20319' },
     { name: 'Practise-1', ip: '45.85.217.109:20017' },
     { name: 'Practise-2', ip: '45.142.112.13:20376' },
