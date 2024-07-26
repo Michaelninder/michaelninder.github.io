@@ -1,6 +1,8 @@
 
 const teamMembers = [
-    { gametag: 'Player1', rank: 'Admin', task: 'Server Management' },
+    { gametag: 'Michaelninder', rank: 'Admin', task: 'Server Management' },
+    { gametag: 'Louixch', rank: 'Admin', task: 'Server Management' },
+    { gametag: 'Duesslo', rank: 'Admin', task: 'Programming Stuff' },
     { gametag: 'Player2', rank: 'Moderator', task: 'Community Support' },
     // Weitere Team-Mitglieder hier hinzufügen
 ];
