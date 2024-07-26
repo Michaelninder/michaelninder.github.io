@@ -1,0 +1,14 @@
+.status-online {
+    color: green;
+    font-weight: bold;
+}
+
+.status-offline {
+    color: red;
+    font-weight: bold;
+}
+
+.status-starting {
+    color: orange;
+    font-weight: bold;
+}

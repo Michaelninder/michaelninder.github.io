@@ -1,0 +1,12 @@
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.team-member img {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
