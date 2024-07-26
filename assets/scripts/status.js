@@ -26,7 +26,6 @@ function fetchServerStatus() {
                     <td>${server.name}</td>
                     <td class="${statusClass}">${statusText}</td>
                     <td>${data.players ? `${data.players.online}/${data.players.max}` : 'N/A'}</td>
-                    <td>${data.debug ? `${data.debug.ping}` : 'N/A'}</td>
                 `;
                 tableBody.appendChild(row);
             })
