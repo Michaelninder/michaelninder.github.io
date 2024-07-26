@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTD XP-Craft.de</title>
+</head>
+<body>
+    <h1>XP-Craft.de</h1>
+    <div id="motd">Lade...</div>
+
+    <script>
+        async function fetchServerMotd(serverIp) {
+            const response = await fetch(`https://api.mcsrvstat.us/2/${serverIp}`);
+            const data = await response.json();
+            return data.motd.clean.join(' ');
+        }
+
+        function displayMotd(motd) {
+            document.getElementById('motd').innerText = motd;
+        }
+
+        const serverIp = 'mc.xp-craft.de'; // Ersetze dies durch die tatsächliche Server-IP
+        fetchServerMotd(serverIp).then(displayMotd).catch(error => {
+            console.error('Fehler beim Abrufen der MotD:', error);
+            document.getElementById('motd').innerText = 'Fehler beim Laden der MotD.';
+        });
+    </script>
+</body>
+</html>
