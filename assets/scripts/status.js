@@ -7,7 +7,7 @@ const servers = [
     { name: 'Practise-2', ip: '45.142.112.13:20376' },
     { name: 'Practise-3', ip: '45.89.143.193:20101' },
     { name: 'Build', ip: '45.89.143.141:20231' },
-    { name: 'Louixch's Private SMP', ip: '193.187.255.36:20464' },
+    { name: 'Louixchs Private SMP', ip: '193.187.255.36:20464' },
 ];
 
 function fetchServerStatus() {
