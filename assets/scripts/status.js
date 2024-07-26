@@ -1,8 +1,7 @@
 
 const servers = [
     { name: 'Proxy', ip: '45.142.112.11:20081' },
-    { name: 'Lobby-1', ip: '45.142.112.12:20409' },},
-   // { name: 'Lobby-2', ip: 'localhost' },
+    { name: 'Lobby-1', ip: '45.142.112.12:20409' },
     { name: 'XP-SMP', ip: '193.187.255.41:20319' },
     { name: 'Practise-1', ip: '45.85.217.109:20017' },
     { name: 'Practise-2', ip: '45.142.112.13:20376' },
@@ -27,7 +26,10 @@ function fetchServerStatus() {
                     <td>${server.name}</td>
                     <td class="${statusClass}">${statusText}</td>
                     <td>${data.players ? `${data.players.online}/${data.players.max}` : 'N/A'}</td>
-                    <td>${data.debug ? `${data.debug.ping}` : 'N/A'}</td>
+                    <td>${data.debug ? `${data.debug.ping} ms` : 'N/A'}</td>
+                    <td>${data.debug ? `${data.debug.cpu} / ${data.debug.ram}` : 'N/A'}</td>
+                    <td>${data.debug ? data.debug.uptime : 'N/A'}</td>
+                    <td>${data.debug ? data.debug.last_contact : 'N/A'}</td>
                 `;
                 tableBody.appendChild(row);
             })
