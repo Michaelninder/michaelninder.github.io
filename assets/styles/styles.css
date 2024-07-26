@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: #333;
+    color: black;
 }
 
 header {
@@ -67,6 +67,10 @@ footer {
     text-decoration: none;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 
 .mc-font {
     font-family: "Minecraftia", sans-serif;
@@ -93,10 +97,29 @@ th, td {
     text-align: left;
 }
 
+.status-online {
+    color: green;
+    font-weight: bold;
+}
 
+.status-offline {
+    color: red;
+    font-weight: bold;
+}
 
+.status-starting {
+    color: orange;
+    font-weight: bold;
+}
 
-.dark-mode {
-    background-color: black;
-    color: white;
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.team-member img {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
