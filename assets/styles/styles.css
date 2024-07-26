@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: black;
+    color: #333;
 }
 
 header {
@@ -10,32 +10,26 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-
 header nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 header nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 header nav ul li a {
     color: white;
     text-decoration: none;
 }
-
 .settings {
     margin-top: 10px;
 }
-
 .settings button {
     margin: 0 5px;
     padding: 5px 10px;
     cursor: pointer;
 }
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -43,83 +37,35 @@ footer {
     color: white;
     padding: 20px 0;
 }
-
 .footer-section {
     flex: 1;
     text-align: center;
 }
-
 .footer-section h3 {
     margin-bottom: 10px;
 }
-
 .footer-section ul {
     list-style-type: none;
     padding: 0;
 }
-
 .footer-section ul li {
     margin: 5px 0;
 }
-
 .footer-section ul li a {
     color: white;
     text-decoration: none;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-}
 
 .mc-font {
     font-family: "Minecraftia", sans-serif;
-}
-
-/* Minecraft Font */
-@font-face {
-    font-family: 'Minecraftia';
-    src: url('minecraftia.ttf') format('truetype');
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th, td {
-    padding: 10px;
+	@@ -93,10 +97,29 @@ th, td {
     text-align: left;
 }
 
-.status-online {
-    color: green;
-    font-weight: bold;
-}
 
-.status-offline {
-    color: red;
-    font-weight: bold;
-}
 
-.status-starting {
-    color: orange;
-    font-weight: bold;
-}
 
-.team-member {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.team-member img {
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+.dark-mode {
+    background-color: black;
+    color: white;
