@@ -30,6 +30,7 @@ header nav ul li a {
     padding: 5px 10px;
     cursor: pointer;
 }
+/*
 footer {
     display: flex;
     justify-content: space-around;
@@ -55,6 +56,8 @@ footer {
     color: white;
     text-decoration: none;
 }
+*/
+
 
 
 .mc-font {
