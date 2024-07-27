@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--header-bg);
+    color: var(--header-color);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+.site-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: inherit;
+}
+
+.nav-list .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdown-bg);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px 15px;
+}
+
+.dropdown-content li a {
+    color: var(--dropdown-color);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: inherit;
+}
+
+:root {
+    --header-bg: #ffffff;
+    --header-color: #000000;
+    --dropdown-bg: #f9f9f9;
+    --dropdown-color: #000000;
+}
+
+body.dark-mode {
+    --header-bg: #2c2c2c;
+    --header-color: #ffffff;
+    --dropdown-bg: #3c3c3c;
+    --dropdown-color: #ffffff;
+}
