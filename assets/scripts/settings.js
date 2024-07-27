@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*
+    document.addEventListener('DOMContentLoaded', () => {
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
     const toggleMcFontButton = document.getElementById('toggle-mcfont');
 
@@ -21,3 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+*/
