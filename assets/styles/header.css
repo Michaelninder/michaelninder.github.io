@@ -84,19 +84,19 @@ nav {
 }
 
 :root {
-    --header-bg: #ffffff;
-    --header-color: #000000;
-    --dropdown-bg: #f9f9f9;
-    --dropdown-color: #000000;
-    --hover-bg: #000000;
-    --hover-color: #ffffff;
-}
-
-body.dark-mode {
     --header-bg: #2c2c2c;
     --header-color: #ffffff;
     --dropdown-bg: #3c3c3c;
-    --dropdown-color: #ffffff;
+    --dropdown-color: #ffffff78;
     --hover-bg: #ffffff;
-    --hover-color: #000000;
+    --hover-color: #0000007b;
+}
+
+header.dark-mode {
+    --header-bg: #ffffff;
+    --header-color: #000000;
+    --dropdown-bg: #f9f9f90e;
+    --dropdown-color: #000000;
+    --hover-bg: #858585;
+    --hover-color: #ffffff80;
 }
