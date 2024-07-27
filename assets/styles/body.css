@@ -1,20 +1,36 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--body-bg);
-    color: var(--body-color);
+    line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
 
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: var(--text-primary);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Tabellen-Stile */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
 }
 
 table, th, td {
-    border: 1px solid var(--table-border);
-    transition: border 0.3s;
+    border: 1px solid var(--table-border-color);
 }
 
 th, td {
@@ -22,38 +38,16 @@ th, td {
     text-align: left;
 }
 
-thead {
+th {
     background-color: var(--table-header-bg);
-    color: var(--table-header-color);
-    transition: background-color 0.3s, color 0.3s;
 }
 
-tbody tr:nth-child(even) {
-    background-color: var(--table-row-even);
-    transition: background-color 0.3s;
+body.dark-mode th {
+    background-color: #333333;
+    color: #e0e0e0;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: var(--table-row-odd);
-    transition: background-color 0.3s;
-}
-
-:root {
-    --body-bg: #ffffff;
-    --body-color: #000000;
-    --table-border: #000000;
-    --table-header-bg: #f1f1f1;
-    --table-header-color: #000000;
-    --table-row-even: #f9f9f9;
-    --table-row-odd: #ffffff;
-}
-
-body.dark-mode {
-    --body-bg: #2c2c2c;
-    --body-color: #ffffff;
-    --table-border: #ffffff;
-    --table-header-bg: #3c3c3c;
-    --table-header-color: #ffffff;
-    --table-row-even: #3c3c3c;
-    --table-row-odd: #2c2c2c;
+body.light-mode th {
+    background-color: #f1f1f1;
+    color: #000000;
 }
