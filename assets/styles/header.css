@@ -1,10 +1,9 @@
+/* Allgemeine Header-Stile */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--header-bg);
-    color: var(--header-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -19,84 +18,111 @@ header {
 }
 
 .site-name {
-    font-size: 2em;
+    font-family: 'Press Start 2P', cursive; /* Pixel-Schriftart */
+    font-size: 24px;
     margin-left: 10px;
+    color: inherit; /* Erbt die Textfarbe aus dem Header */
     text-decoration: none;
-    color: inherit;
 }
 
-nav {
-    flex-grow: 1;
-    margin-left: 20px;
-}
-
-.nav-list {
+/* Header-Navigation */
+nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-.nav-list li {
+nav ul li {
     position: relative;
 }
 
-.nav-list a {
-    text-decoration: none;
-    padding: 15px 20px;
+nav a {
     display: block;
+    padding: 10px 15px;
+    text-decoration: none;
     color: inherit;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-list a:hover {
-    background-color: var(--hover-bg);
-    color: var(--hover-color);
+nav a:hover {
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-color);
 }
 
-.nav-list .dropdown:hover .dropdown-content {
-    display: block;
-}
-
+/* Dropdown-Styles */
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: var(--dropdown-bg);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    padding: 0;
+    list-style: none;
 }
 
-.dropdown-content li {
-    padding: 10px 15px;
+.dropdown-content a {
+    padding: 10px;
+    display: block;
 }
 
-.dropdown-content li a {
-    color: var(--dropdown-color);
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-#theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5em;
-    color: inherit;
+/* Dark-Mode-Spezifische Stile */
+body.dark-mode header {
+    background-color: var(--header-bg-dark);
+    color: var(--header-color-dark);
 }
 
+body.dark-mode nav a {
+    color: var(--nav-color-dark);
+}
+
+body.dark-mode nav a:hover {
+    background-color: var(--nav-hover-bg-dark);
+    color: var(--nav-hover-color-dark);
+}
+
+body.dark-mode .dropdown-content {
+    background-color: var(--dropdown-bg-dark);
+}
+
+/* Light-Mode-Spezifische Stile */
+body.light-mode header {
+    background-color: var(--header-bg-light);
+    color: var(--header-color-light);
+}
+
+body.light-mode nav a {
+    color: var(--nav-color-light);
+}
+
+body.light-mode nav a:hover {
+    background-color: var(--nav-hover-bg-light);
+    color: var(--nav-hover-color-light);
+}
+
+body.light-mode .dropdown-content {
+    background-color: var(--dropdown-bg-light);
+}
+
+/* Variablen für Farben */
 :root {
-    --header-bg: #ffffff;
-    --header-color: #000000;
-    --dropdown-bg: #f9f9f9;
-    --dropdown-color: #000000;
-    --hover-bg: #000000;
-    --hover-color: #ffffff;
-}
+    /* Farben für Light-Mode */
+    --header-bg-light: #ffffff;
+    --header-color-light: #000000;
+    --nav-color-light: #000000;
+    --nav-hover-bg-light: #f0f0f0;
+    --nav-hover-color-light: #000000;
+    --dropdown-bg-light: #ffffff;
 
-body.dark-mode {
-    --header-bg: #2c2c2c;
-    --header-color: #ffffff;
-    --dropdown-bg: #3c3c3c;
-    --dropdown-color: #ffffff;
-    --hover-bg: #ffffff;
-    --hover-color: #000000;
+    /* Farben für Dark-Mode */
+    --header-bg-dark: #2c2c2c;
+    --header-color-dark: #ffffff;
+    --nav-color-dark: #ffffff;
+    --nav-hover-bg-dark: #444444;
+    --nav-hover-color-dark: #ffffff;
+    --dropdown-bg-dark: #333333;
 }
