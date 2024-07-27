@@ -23,9 +23,7 @@
 });
 
 
-*/
-
-document.addEventListener('DOMContentLoaded', () => {
+*/document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = localStorage.getItem('theme') || 'light';
 
     if (currentTheme === 'dark') {
