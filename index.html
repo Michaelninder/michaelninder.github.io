@@ -10,18 +10,60 @@
 </head>
 <body>
     <header>
-        <h1>XP-Craft.de Minecraft Server</h1>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="XP-Craft Logo" class="logo">
+                <span class="site-name">XP-Craft.de</span>
+            </a>
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="status.html">Status</a></li>
-                <li><a href="team.html">Team</a></li>
+            <ul class="nav-list">
+                <li><a href="#minigames">Minigames</a></li>
+                <li class="dropdown">
+                    <a href="#smp">SMP</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#tutorials">Tutorials</a></li>
+                        <li><a href="#updates">Updates</a></li>
+                        <li><a href="#more-smp">More</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#shop">Shop</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#ranks">Ranks</a></li>
+                        <li><a href="#crates">Crates</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#more-shop">More</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#team">Team</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#our-team">Our Team</a></li>
+                        <li><a href="#apply-staff">Apply as Staff</a></li>
+                        <li><a href="#staff-ranks">Staff Ranks</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#status">Status</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#lobbys">Lobbys</a></li>
+                        <li><a href="#practice">Practice</a></li>
+                        <li><a href="#smp-status">SMP</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#partners">Partners</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#mine-hoster">Mine-Hoster</a></li>
+                        <li><a href="#wisehosting">Wisehosting</a></li>
+                        <li><a href="#more-partners">More</a></li>
+                        <li><a href="#apply-partner">Apply as Partner</a></li>
+                    </ul>
+                </li>
             </ul>
-            <div class="settings">
-                <button id="toggle-dark-mode">Dark Mode</button>
-                <button id="toggle-mcfont">Minecraft Font</button>
-            </div>
         </nav>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
     </header>
 
     <main>
