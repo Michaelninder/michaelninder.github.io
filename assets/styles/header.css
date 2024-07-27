@@ -52,6 +52,12 @@ nav {
     padding: 10px 15px;
     display: block;
     color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
 }
 
 .nav-list .dropdown:hover .dropdown-content {
@@ -88,6 +94,8 @@ nav {
     --header-color: #000000;
     --dropdown-bg: #f9f9f9;
     --dropdown-color: #000000;
+    --hover-bg: #000000;
+    --hover-color: #ffffff;
 }
 
 body.dark-mode {
@@ -95,4 +103,6 @@ body.dark-mode {
     --header-color: #ffffff;
     --dropdown-bg: #3c3c3c;
     --dropdown-color: #ffffff;
+    --hover-bg: #ffffff;
+    --hover-color: #000000;
 }
