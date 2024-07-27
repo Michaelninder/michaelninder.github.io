@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode');
         let theme = 'light';
         if (document.body.classList.contains('dark-mode')) {
             theme = 'dark';
