@@ -5,7 +5,6 @@ const servers = [
     { name: 'XP-SMP S4', ip: '193.187.255.41:20319' },
     { name: 'Fortune-Wars', ip: '45.142.112.194:20034' },
     { name: 'SW-Practise', ip: '45.89.143.42:20037' },
-    { name: 'Build', ip: '45.89.143.141:20231' },
 ];
 
 function fetchServerStatus() {
