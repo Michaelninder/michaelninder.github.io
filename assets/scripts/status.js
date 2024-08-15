@@ -1,13 +1,11 @@
 
 const servers = [
-    { name: 'Proxy', ip: '45.142.112.11:20081' },
-    { name: 'Lobby-1', ip: '45.142.112.12:20409' },
+    { name: 'Proxy', ip: '45.85.217.4:20217' },
+    { name: 'Lobby-1', ip: '45.142.112.13:20376' },
     { name: 'XP-SMP S4', ip: '193.187.255.41:20319' },
-    { name: 'Practise-1', ip: '45.85.217.109:20017' },
-    { name: 'Practise-2', ip: '45.142.112.13:20376' },
-    { name: 'Practise-3', ip: '45.89.143.193:20101' },
+    { name: 'Fortune-Wars', ip: '45.142.112.194:20034' },
+    { name: 'SW-Practise', ip: '45.89.143.42:20037' },
     { name: 'Build', ip: '45.89.143.141:20231' },
-    { name: 'Louixchs SMP', ip: '193.187.255.36:20464' },
 ];
 
 function fetchServerStatus() {
