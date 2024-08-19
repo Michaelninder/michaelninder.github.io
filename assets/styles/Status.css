@@ -28,12 +28,12 @@ h1 {
 }
 
 #statusTable th {
-    background-color: #333;
+    background-color: #33333315;
     color: white;
 }
 
 #statusTable td {
-    background-color: #fff;
+    background-color: #ffffff5c;
 }
 
 @media (prefers-color-scheme: light) {
@@ -48,7 +48,7 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
     #statusTable {
-        background-color: #333;
+        background-color: #33333300;
     }
 
     #statusTable th {
