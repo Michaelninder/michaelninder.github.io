@@ -3,8 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('../images/background/Lobby-Mid.png'); /* Pfad zu deinem Bild */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 
 h1 {
     text-align: center;
