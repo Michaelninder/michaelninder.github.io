@@ -12,3 +12,64 @@
     color: orange;
     font-weight: bold;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#statusTable {
+    width: calc(60% - 40px); 
+    margin: 33px auto; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+#statusTable th, #statusTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#statusTable th {
+    background-color: #33333315;
+    color: white;
+}
+
+#statusTable td {
+    background-color: #ffffff5c;
+}
+
+@media (prefers-color-scheme: light) {
+    #statusTable {
+        background-color: #eee;
+    }
+
+    #statusTable th {
+        background-color: #ccc;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #statusTable {
+        background-color: #33333300;
+    }
+
+    #statusTable th {
+        background-color: #555;
+    }
+}
+
+
+
