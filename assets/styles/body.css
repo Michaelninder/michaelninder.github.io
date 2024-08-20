@@ -21,3 +21,25 @@ h1 {
     width: 40%;
   }
   
+
+  
+@font-face {
+    font-family: mcfont;
+    src: url(https://cdn.cubecraft.net/fonts/minecraftfont.woff);
+}
+
+div {
+    font-family: mcfont;
+}
+a {
+    font-family: mcfont;
+}
+h2 {
+    font-family: mcfont;
+}
+h1 {
+    font-family: mcfont;
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+}
