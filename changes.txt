@@ -1,7 +1,0 @@
-XP-Craft-Webpage-Pre-V2.0.1 (outdated)
-
-Changes:
-- Header Erweitert
-- Header auf alle Seiten überragen
-- Favicon hinzugefügt
-- Footer-Color geändert
